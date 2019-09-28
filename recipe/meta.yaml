@@ -1,5 +1,5 @@
 {% set name = "pyspark-stubs" %}
-{% set version = "2.4.0.post5" %}
+{% set version = "2.4.0.post6" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 2249e20f3d120551d6ba3bf8bca67c1cb9a2d2e39bd9ebcd3cb00ae906428f21
+  sha256: 3ffbebfd0d7881a1e0772c9ec27fa5b61c3c8cf65431dd7c7f8625fe1a8cf3d3
 
 build:
   number: 0
