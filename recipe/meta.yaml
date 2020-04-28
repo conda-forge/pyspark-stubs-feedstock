@@ -1,17 +1,17 @@
 {% set name = "pyspark-stubs" %}
-{% set version = "2.4.0.post7" %}
+{% set version = "2.4.0.post8" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 190addf40d3c8d3aa48f166fd85d861ff90b3eb620c4a714ba036c2e715e943a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 62a40d806c2a50968afc208ac0184b0b71a54eba9a619b7d9a28f8d868c01061
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -29,13 +29,13 @@ test:
     - if not exist %SP_DIR%\\pyspark\\py.typed exit 1  # [win]
 
 about:
-  home: "https://github.com/zero323/pyspark-stubs"
-  license: "Apache-2.0"
-  license_family: "Apache"
-  license_file: "LICENSE"
-  summary: "A collection of the Apache Spark stub files"
-  doc_url: "https://github.com/zero323/pyspark-stubs/blob/branch-2.4/README.rst"
-  dev_url: "https://github.com/zero323/pyspark-stubs"
+  home: https://github.com/zero323/pyspark-stubs
+  license: Apache-2.0
+  license_family: Apache
+  license_file: LICENSE
+  summary: A collection of the Apache Spark stub files
+  doc_url: https://github.com/zero323/pyspark-stubs/blob/branch-2.4/README.rst
+  dev_url: https://github.com/zero323/pyspark-stubs
 
 extra:
   recipe-maintainers:
