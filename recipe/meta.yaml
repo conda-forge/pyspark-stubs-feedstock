@@ -10,17 +10,17 @@ source:
   sha256: 03fdbd79941dd0670707458b488126a4cb62bc230d2b871dc3b8c94cb1f02a94
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - pyspark >=2.4.0,<3.0.0
+    - pyspark >=3.0.0,<3.1.0
     - python >=3.6
   run:
-    - pyspark >=2.4.0,<3.0.0
+    - pyspark >=3.0.0,<3.1.0
     - python >=3.6
 
 test:
